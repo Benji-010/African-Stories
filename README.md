@@ -1,9 +1,9 @@
-### QUIZ SUR LES GRANDES HISTOIRES AFRICAINES
+## QUIZ SUR LES GRANDES HISTOIRES AFRICAINES
 
 Ce projet est un site web interactif réalisé dans un cadre académique.
 Il propose plusieurs quiz pour tester les connaissances sur des figures et des histoires importantes du continent africain.
 
-### OBJECTIF DU PROJET
+## OBJECTIF DU PROJET
 
 - Valoriser l’histoire africaine de manière ludique;
 
@@ -11,7 +11,7 @@ Il propose plusieurs quiz pour tester les connaissances sur des figures et des h
 
 - Mettre en pratique la manipulation du DOM, les événements et les conditions en JavaScript.
 
-### FONCTIONNALITES
+## FONCTIONNALITES
 
 - ✅ Quiz à choix multiples;
 
@@ -31,7 +31,7 @@ Il propose plusieurs quiz pour tester les connaissances sur des figures et des h
 
 - 🔄 Bouton Recommencer le quiz pour réinitialiser les réponses.
 
-### TECHNOLOGIES UTILISEES
+## TECHNOLOGIES UTILISEES
 
 - HTML5 — Structure des pages;
 
