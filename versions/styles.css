@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../assets/images/background4jpeg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    padding: 20px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .logo {
+    margin: 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 200px;
+    height: 120px;
+    margin-left: 17px;
+}
+
+header .text {
+    margin: 20px 120px 2px 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #080808;
+    text-align: center;
+}
+
+        /* Personnages */
+
+.personnages {
+    padding: 60px 0;
+}
+
+.personnages .contenus {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.personnages .contenus .bloc {
+    display: flex;
+    justify-content: center;
+}
+
+        /* Boîte */
+.personnages .box {
+    width: 350px;
+    height: 420px;
+    margin: 20px;
+    border: 10px solid #ddd4d4f3;
+    text-decoration: none;
+    color: #fdbf23ce;
+    transition: all 0.4s ease;
+    background: #080808;
+    position: relative;
+}
+
+.box .img-menu {
+    width: 100%;
+    height: 300px;
+}
+
+.box .img-menu img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box .text {
+    padding: 15px;
+    /* text-align: center; */
+}
+
+.box .text h2 {
+    font-weight: bold;
+    text-align: center;
+    color: #551a8b;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.box .text p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffff;
+}
+
+.box .link {
+    display: none;
+}
+
+.box .link a {
+    text-decoration: none;
+}
+
+.box .link a:hover {
+    text-decoration: underline;
+}
+
+        /* Description cachée */
+
+.box .description {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.4s ease;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.box .close {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.box:target {
+    height: auto;
+}
+
+.box:target .description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.box:target .close {
+    display: block;
+}
+
+.box .close::after {
+    content: "";
+}
+
+.box .close {
+    pointer-events: none;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.box:target .close {
+    pointer-events: auto;
+}
+
+.box:target .link {
+    display: block;
+    text-align: end;
+    margin-bottom: 17px;
+    font-size: 21px;
+} 
+
+.box .link a {
+    text-decoration: none;
+    color: #551a8b;
+    font-weight: 300;
+}
+
+            /* Footer */
+
+.footer {
+    margin-top: 60px;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.footer p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+

@@ -1,0 +1,282 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #F5F5F0; /* Blanc cassé */
+    color: #2C2C2C; /* Noir doux */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0;
+    box-shadow: 0 0 20px rgba(44, 44, 44, 0.1);
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #8B4513;
+    padding-bottom: 20px 30px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header .before {
+    text-decoration: none;
+    color: #8B4513;
+    font-weight: 600;
+    border: 2px solid #8B4513;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+header .before:hover {
+    background-color: #8B4513;
+    color: #fff;
+}
+
+header .logo img {
+    width: 160px;
+    height: auto;
+}
+
+header .intro {
+    text-align: center;
+    flex: 1;
+}
+
+h1 {
+    color: #2C2C2C;
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+.sous-titre {
+    color: #8B4513;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+header .next a {
+    text-decoration: none;
+    color: #8B4513;
+    font-weight: 600;
+    border: 2px solid #8B4513;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+header .next a:hover {
+    background-color: #8B4513;
+    color: #fff;
+}
+
+/* ===== PHOTO PRINCIPALE ===== */
+.photo-principale {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.photo-principale img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 5px solid #2C2C2C;
+    display: block;
+    margin: 0 auto;
+}
+
+.legende-photo {
+    color: #8B4513;
+    font-size: 0.9em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.biographie {
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.biographie h2 {
+    color: #2C2C2C;
+    border-left: 5px solid #8B4513;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.biographie p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.evenements {
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.evenements h2 {
+    color: #2C2C2C;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #8B4513;
+    padding-bottom: 10px;
+}
+
+.grille-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.evenement {
+    width: 300px;
+    margin-bottom: 30px;
+    background-color: white;
+    border: 2px solid #2C2C2C;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.evenement:hover {
+    transform: translateY(-5px);
+}
+
+.evenement img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #8B4513;
+    margin-bottom: 15px;
+}
+
+.evenement h3 {
+    color: #2C2C2C;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.evenement p {
+    color: #2C2C2C;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.annee {
+    display: inline-block;
+    background-color: #8B4513;
+    color: white;
+    padding: 3px 10px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+/* .container .quiz {
+    
+} */
+
+.container .quiz h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2C2C2C;
+    font-size: 1.8em;
+}
+
+.container .quiz p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #8B4513;
+    color: #2C2C2C;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    header .logo {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    header .before {
+        padding: 3px 2px;
+        font-size: 14px;
+    }
+
+    header .logo img {
+        margin: 0;
+        width: 150px;
+        height: auto;
+    }
+
+    header .next a{
+        padding: 3px 2px;
+        font-size: 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .biographie, .evenements {
+        padding: 0 10px;
+    }
+    
+    .grille-photos {
+        gap: 20px;
+    }
+    
+    .evenement {
+        width: 100%;
+        max-width: 350px;
+    }
+}
